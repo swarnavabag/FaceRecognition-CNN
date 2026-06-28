@@ -1,0 +1,10 @@
+.venv311/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+data/*
+
+*.pth
+
+.vscode/

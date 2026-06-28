@@ -130,27 +130,77 @@ FaceRecognition-CNN/
 
 ## Installation
 
+### Clone the Repository
+
 ```bash
 git clone https://github.com/swarnavabag/FaceRecognition-CNN.git
 cd FaceRecognition-CNN
-```
+````
 
-Create virtual environment:
+---
+
+### Create Virtual Environment (Python 3.11 Recommended)
 
 ```bash
 python -m venv .venv
 ```
 
-Activate environment (Windows):
+Activate the environment:
 
-```bash
+#### Windows (PowerShell)
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+#### Windows (CMD)
+
+```cmd
 .venv\Scripts\activate
 ```
 
-Install dependencies:
+#### Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+### Install PyTorch
+
+Install PyTorch separately based on your system configuration (CPU or CUDA-enabled GPU).
+
+Refer to the official installation guide:
+
+https://pytorch.org/get-started/locally/
+
+Example (CUDA 12.1):
+
+```bash
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+
+Example (CPU only):
+
+```bash
+pip3 install torch torchvision torchaudio
+```
+
+---
+
+### Install Remaining Dependencies
 
 ```bash
 pip install -r requirements.txt
+```
+
+---
+
+### Verify Installation
+
+```bash
+python -c "import torch; print(torch.__version__); print(torch.cuda.is_available())"
 ```
 
 ---

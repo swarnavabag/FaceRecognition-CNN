@@ -7,7 +7,7 @@ import numpy as np
 import torch
 from facenet_pytorch import MTCNN
 
-from src.shared.config import (
+from src.config import (
     TRAIN_RAW_DIR,
     VAL_RAW_DIR,
     TRAIN_PROCESSED_DIR,

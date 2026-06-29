@@ -6,12 +6,12 @@ import cv2
 import torch
 from tqdm import tqdm
 
-from src.shared.config import (
+from src.config import (
     VAL_PROCESSED_DIR,
     BEST_MODEL_PATH
 )
-from src.reco.model import FaceRecognitionResNet
-from src.reco.dataset import val_transform
+from src.model import FaceRecognitionResNet
+from src.dataset import val_transform
 
 
 # ============================================================

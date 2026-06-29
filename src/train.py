@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 from tqdm import tqdm
 
-from src.shared.config import (
+from src.config import (
     LEARNING_RATE,
     WEIGHT_DECAY,
     EPOCHS,
@@ -12,9 +12,9 @@ from src.shared.config import (
     BEST_MODEL_PATH
 )
 
-from src.reco.dataset import create_dataloaders
-from src.reco.model import FaceRecognitionResNet
-from src.reco.losses import ArcMarginProduct
+from src.dataset import create_dataloaders
+from src.model import FaceRecognitionResNet
+from src.losses import ArcMarginProduct
 
 
 # ============================================================

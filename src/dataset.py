@@ -5,7 +5,7 @@ import cv2
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 
-from src.shared.config import (
+from src.config import (
     TRAIN_PROCESSED_DIR,
     VAL_PROCESSED_DIR,
     BATCH_SIZE,
